@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- set charset -->
+  <title>Contact</title> <!-- page title -->
+  <link rel="stylesheet" href="contact.css"> <!-- link css file -->
+</head>
+<body>
+  <audio id="bgMusic" src="audio/audio1.mp3" autoplay loop></audio>
+  <header>
+  <video autoplay muted loop id="bg-video"> <!-- background video -->
+    <source src="video/hero 3.mp4" type="video/mp4"> <!-- video source -->
+    Your browser does not support HTML5 video. <!-- fallback text -->
+  </video>
+
+  <div class="header-content">
+    <div class="head-left">
+      <img src="img/logo.png" alt="logo"> <!-- logo image -->
+    </div>
+
+    <div class="nav-box">
+      <div class="head-right">
+        <p><a href="index.html">HOME</a></p> <!-- home link -->
+        <p><a href="about.html">ABOUT</a></p> <!-- about link -->
+        <p><a href="merch.html">MERCH</a></p> <!-- merch link -->
+        <p><a href="contact.html">CONTACT</a></p> <!-- contact link -->
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <section class="contact-section">
+    <div class="form-container">
+      <h2>Contact Us</h2> <!-- form title -->
+      <form action="https://formspree.io/f/yourformid" method="POST"> <!-- form with post -->
+        <input type="text" name="name" placeholder="Your Name" required> <!-- name input -->
+        <input type="email" name="_replyto" placeholder="Your Email" required> <!-- email input -->
+        <textarea name="message" placeholder="Your Message" required></textarea> <!-- message box -->
+        <button type="submit">Send Message</button> <!-- submit button -->
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

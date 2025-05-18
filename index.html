@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- set page code to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- make page mobile friendly -->
+    <title>Gaming Website</title> <!-- page title shown in browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- link to css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- icons from fontawesome -->
+</head>
+<body>
+    <audio id="bgMusic" src="audio/audio3.mp3" autoplay loop></audio>
+
+    <div class="container"> <!-- main container for whole page -->
+
+        <header> <!-- top header bar -->
+            <div class="head-left"> <!-- left side of header -->
+                <img src="img/logo.png" alt="logo"> <!-- website logo -->
+                <a href="games.html"><button>Games</button></a> <!-- button link to games page -->
+            </div>
+
+            <div class="head-right"> <!-- right side header links -->
+                <p><a href="index.html">HOME</a></p> <!-- link to home -->
+                <p><a href="about.html">ABOUT</a></p> <!-- link to about page -->
+                <p><a href="merch.html">MERCH</a></p> <!-- link to merch page -->
+                <p><a href="contact.html">CONTACT</a></p> <!-- link to contact page -->
+            </div>
+        </header>
+
+        <section class="hero-section autoBlur"> <!-- top big hero area -->
+            <div class="hero-vid"> <!-- video container -->
+                <video loop autoplay muted plays-inline class="hero-video"> <!-- hero video playing -->
+                    <source src="video/hero 1.1.mp4" type="video/mp4"> <!-- video source file -->
+                </video>
+
+                <div class="hero-info"> <!-- text info on top of video -->
+                    <h1>GAMERX</h1> <!-- main heading -->
+                    <p>"All Worlds. One Portal."</p> <!-- tagline text -->
+                    <button>Enter the Multiverse</button> <!-- button in hero -->
+                </div>
+
+                <h1 class="gaming-text">Multiverse</h1> <!-- big text on hero -->
+                <div class="next-btn"> <!-- button to go to next video -->
+                    NEXT
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section"> <!-- about section -->
+            <p>Welcome to GAMERX</p> <!-- welcome text -->
+            <div class="autoBlur">
+            <h1>CONNECTING ALL GAMING UNIVERSES IN ONE REALM</h1> <!-- main about title -->
+            </div>
+            <img class="stones-img" src="img/stones.png" alt="stone"> <!-- decorative image -->
+            <div class="image-box autoTakeFull"> <!-- about image box -->
+                <img src="img/about.webp" alt="about-img"> <!-- about picture -->
+            </div>
+            <h4>From Genshin to Valorant – We Unite Every World</h4> <!-- subheading -->
+            <h5>GAMERX is your gateway to explore, play, and celebrate iconic games like Mobile Legends, League of Legends, Genshin Impact, and Valorant – all in one immersive platform.</h5> <!-- about description -->
+        </section>
+
+        <section class="info-section"> <!-- info section for upcoming games -->
+            <h3>Into the Ultimate Gaming</h3> <!-- section title -->
+            <p>Explore a universe where top games collide. Here are some of the upcoming games.</p> <!-- intro text -->
+
+            <div class="info-cards"> <!-- cards container -->
+
+                <div class="card autoDisplay"> <!-- first game card -->
+                    <h1>RADIANT</h1> <!-- game name -->
+                    <p>An anime and gaming-inspired NFT collection - the IP primed for expansion.</p> <!-- game description -->
+
+                    <video src="video/feature-1.mp4" autoplay loop muted plays-inline></video> <!-- video showing game -->
+                    <button>COMING SOON</button> <!-- button -->
+                </div>
+
+                <div class="card autoDisplay"> <!-- second game card -->
+                    <h1>Zigma</h1>
+                    <p>The NFT collection merging Zentry’s IP, AI, and gaming—pushing the boundaries of NFT innovation.</p>
+                    <video src="video/feature-2.mp4" autoplay loop muted plays-inline></video>
+                    <button>COMING SOON</button>
+                </div>
+
+                <div class="card autoDisplay"> <!-- third game card -->
+                    <h1>Nexus</h1>
+                    <p>The metagame portal uniting humans & AI to play, compete and earn,shaping profiles that reflect their legacy.</p>
+                    <video src="video/feature-3.mp4" autoplay loop muted plays-inline></video>
+                    <button>COMING SOON</button>
+                </div>
+
+                <div class="card autoDisplay"> <!-- fourth game card -->
+                    <h1>Azul</h1>
+                    <p>The agent of agents elevating agentic AI experience to be more fun and productive.</p>
+                    <video src="video/feature-4.mp4" autoplay loop muted plays-inline></video>
+                    <button>COMING SOON</button>
+                </div> 
+                
+                <div class="card autoDisplay"> <!-- card with only video -->
+                    <video src="video/feature-5.mp4" autoplay loop muted plays-inline></video>
+                </div> 
+                
+                <div class="card autoDisplay"> <!-- last card with text only -->
+                    <h1>MORE COMING SOON</h1>
+                </div> 
+                
+            </div>
+        </section>
+
+        <section class="contact-section"> <!-- contact us section -->
+            <p>Join Gamerx</p> <!-- short invite -->
+            <div class="autoBlur">
+            <h1>LET'S BUILD THE NEW ERA OF GAMING TOGETHER </h1> <!-- big invite title -->
+        </div>
+           <a href="contact.html"><button>Contact US</button></a> <!-- contact button -->
+
+            <img class="img1" src="img/contact-1.png" alt="contact-1"> <!-- decorative image -->
+            <img class="img2" src="img/contact-2.png" alt="contact-2">
+            <img class="img3" src="img/contact-3.png" alt="contact-3">
+
+        </section>
+
+        <section class="footer"> <!-- footer at bottom -->
+            <p>©Gamerx 2025. All rights reserved</p> <!-- copyright text -->
+           <ul> <!-- social links list -->
+              <li><a href="https://www.youtube.com/@angelin446"><i class="fa-brands fa-youtube"></i></a></li> <!-- youtube icon link -->
+              <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li> <!-- instagram icon link -->
+             <li><a href="https://github.com/Angelin4444"><i class="fa-brands fa-github"></i></a></li> <!-- github icon link -->
+           </ul>
+
+            <p>Privacy Policy</p> <!-- privacy text -->
+        </section>
+    </div>
+    <script src="app.js"></script> <!-- link to js file -->
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+  margin: 0; /* no outside space */
+  padding: 0; /* no inside space */
+  height: 100%; /* full screen height */
+  overflow: hidden; /* no scroll bars */
+  font-family: sans-serif; /* simple font style */
+}
+
+#bg-video {
+  position: fixed; /* stay in place */
+  top: 0; /* top edge */
+  left: 0; /* left edge */
+  width: 100%; /* full width */
+  height: 100%; /* full height */
+  object-fit: cover; /* cover area nicely */
+  z-index: -1; /* behind everything */
+}
+
+.header-content {
+  display: flex; /* horizontal layout */
+  justify-content: space-between; /* spread out */
+  align-items: center; /* vertical center */
+  padding: 30px 50px; /* space inside */
+  position: relative; /* layer control */
+  z-index: 1; /* above background */
+}
+
+.head-left img {
+  width: 70px; /* image width */
+  height: 70px; /* image height */
+  margin-right: 20px; /* space on right */
+}
+
+.nav-box {
+  background: rgba(255, 255, 255, 0.1); /* see-through white */
+  backdrop-filter: blur(10px); /* blur behind */
+  padding: 15px 30px; /* inside space */
+  border-radius: 15px; /* round corners */
+}
+
+.head-right {
+  display: flex; /* horizontal items */
+}
+
+.head-right p {
+  margin: 0 10px; /* left and right space */
+}
+
+.head-right a {
+  text-decoration: none; /* no underline */
+  color: white; /* white text */
+  font-size: 18px; /* text size */
+  font-weight: bold; /* bold text */
+  padding-left: 20px; /* space before text */
+  transition: color 0.3s; /* smooth color change */
+}
+
+.head-right a:hover {
+  color: #00ffff; /* bright cyan on hover */
+}
+
+.contact-section {
+  position: absolute; /* on top */
+  top: 50%; /* center vertically */
+  left: 50%; /* center horizontally */
+  transform: translate(-50%, -50%); /* move to exact center */
+  display: flex; /* align content */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  height: auto; /* auto height */
+  z-index: 2; /* on top layer */
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.1); /* see-through white */
+  backdrop-filter: blur(10px); /* blur behind */
+  border-radius: 15px; /* round corners */
+  padding: 2rem; /* inside space */
+  width: 90%; /* almost full width */
+  max-width: 500px; /* max width limit */
+  color: white; /* text color */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* glow effect */
+}
+
+.form-container h2 {
+  text-align: center; /* center text */
+  margin-bottom: 1.5rem; /* space below */
+}
+
+form input,
+form textarea {
+  width: 100%; /* full width */
+  padding: 0.8rem; /* inside space */
+  margin-bottom: 1rem; /* space below */
+  border: none; /* no border */
+  border-radius: 8px; /* rounded edges */
+  background-color: rgba(255, 255, 255, 0.2); /* light transparent bg */
+  color: white; /* text color */
+  font-size: 1rem; /* font size */
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #eee; /* light placeholder text */
+}
+
+form button {
+  width: 100%; /* full width */
+  padding: 0.8rem; /* inside space */
+  background-color: #00ffff; /* cyan background */
+  color: black; /* button text color */
+  border: none; /* no border */
+  border-radius: 8px; /* rounded corners */
+  font-weight: bold; /* bold text */
+  cursor: pointer; /* pointer on hover */
+  transition: background 0.3s; /* smooth color change */
+}
+
+form button:hover {
+  background-color: #00cccc; /* darker cyan on hover */
+}

@@ -1,0 +1,231 @@
+body {
+    background: linear-gradient(-45deg, #4acfee, #02d79a, #6070fd, #a65dcd, #8946b9, #2a46ff, #0099ff, #4acfee); /* color fade background */
+    background-size: 400% 400%; /* big background size */
+    animation: gradientFlow 12s ease infinite; /* slow color move forever */
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%; /* start left middle */
+    }
+    50% {
+        background-position: 100% 50%; /* move right middle */
+    }
+    100% {
+        background-position: 0% 50%; /* back to start */
+    }
+}
+
+
+.games-section {
+    padding: 100px 20px; /* space inside big top/bottom, small sides */
+    text-align: center; /* center text */
+}
+
+.games-section h1 {
+    font-size: 60px; /* big heading */
+    margin-bottom: 50px; /* space below */
+}
+
+/* Game Cards Grid */
+.game-cards {
+    display: grid; /* grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* auto columns min 250px */
+    gap: 40px; /* space between cards */
+    justify-items: center; /* center each card */
+}
+
+/* Individual Game Card */
+.game-card {
+    background-color: #1a1a1a; /* dark card */
+    border-radius: 20px; /* rounded corners */
+    padding: 20px; /* inside space */
+    width: 300px; /* card width */
+    text-align: center; /* center text */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* light glow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* smooth changes */
+    perspective: 1000px; /* 3D depth */
+    transform-style: preserve-3d; /* keep 3D */
+    color: white; /* white text */
+}
+
+.game-card img {
+    width: 100%; /* full card width */
+    height: 180px; /* fixed height */
+    object-fit: cover; /* crop to fit */
+    border-radius: 10px; /* rounded edges */
+    transition: transform 0.5s ease; /* smooth zoom */
+}
+
+.game-card:hover img {
+    transform: scale(1.1); /* zoom image on hover */
+}
+
+.game-card h2 {
+    font-size: 1.5rem; /* medium heading */
+    margin: 15px 0; /* vertical margin */
+    color: #ffffff; /* white */
+}
+
+.game-card p {
+    font-size: 0.95rem; /* small text */
+    color: #dddddd; /* light gray */
+    margin-bottom: 15px; /* space below */
+}
+
+.btn {
+    display: inline-block; /* button shape */
+    padding: 10px 20px; /* inside space */
+    background-color: #00d1ff; /* bright blue */
+    color: #000; /* black text */
+    font-weight: bold; /* bold text */
+    border-radius: 25px; /* round pill shape */
+    text-decoration: none; /* no underline */
+    transition: background 0.3s; /* smooth bg change */
+}
+
+.btn:hover {
+    background-color: #00b3cc; /* darker blue hover */
+}
+
+.upcoming-heading {
+    text-align: center; /* center text */
+    font-size: 3.5rem;  /* very big */
+    font-weight: 900; /* extra bold */
+    color: #000000; /* black text */
+    margin: 60px 0 30px 0; /* top and bottom space */
+    letter-spacing: 2px; /* space between letters */
+    animation: pulseGlow 2s infinite ease-in-out; /* glowing effect */
+}
+
+.info-section{
+    display: flex; /* flex layout */
+    flex-direction: column; /* stack down */
+    position: relative; /* position control */
+    width: 80%; /* wide block */
+    margin-top: 100px; /* space above */
+    margin: 100px auto 0 auto; /* top space, center horizontally */
+}
+
+.info-section h3{
+    margin-bottom: 0; /* no bottom space */
+}
+
+.info-section p{
+    margin-top: 5px; /* small top space */
+    color: gray; /* gray text */
+    max-width: 400px; /* max width */
+    line-height: 25px; /* space between lines */
+}
+
+.info-cards{
+    display: grid; /* grid layout */
+    grid-template-columns: auto auto; /* two columns */
+    gap: 20px; /* space between cards */
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+    margin-top: 30px; /* space above */
+}
+
+.card{
+    position: relative; /* relative position */
+    width: auto; /* auto width */
+    height: 40vh; /* 40% viewport height */
+    overflow: hidden; /* hide overflow */
+    border: 1px solid gray; /* gray border */
+    border-radius: 20px; /* round edges */
+    transition: 0.5s; /* smooth changes */
+}
+
+.card h1{
+    position: absolute; /* above content */
+    margin: 0; /* no margin */
+    top: 10px; /* from top */
+    left: 5%; /* from left */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* strong font */
+    font-size: 60px; /* big text */
+    z-index: 1; /* on top */
+    background: linear-gradient(to right, #4acfee, #53f8c9, #02d79a, #6070fd, #2a46ff, #0099ff, #4acfee); /* color gradient */
+    background-size: 200%; /* gradient size */
+    background-clip: text; /* clip to text */
+    -webkit-background-clip: text; /* webkit fix */
+    -webkit-text-fill-color: transparent; /* make text see gradient */
+    animation: animate-gradient 2.5s linear infinite; /* moving gradient */
+    max-width: 250px; /* max width */
+}
+
+.card p{
+    position: absolute; /* above content */
+    top: 80px; /* below title */
+    left: 5%; /* left side */
+    z-index: 1; /* on top */
+    max-width: 250px; /* max width */
+    color: lightgray; /* light text */
+}
+
+.card video{
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+    object-fit: cover; /* crop to fit */
+}
+
+.card button{
+    position: absolute; /* above content */
+    bottom: 5%; /* from bottom */
+    left: 5%; /* from left */
+    padding: 10px 25px; /* inside space */
+    border: 1px solid gray; /* gray border */
+    background-color: #0f1217; /* dark bg */
+    color: gray; /* text color */
+    border-radius: 20px; /* round edges */
+    box-shadow: 0 0 5px lightgray; /* light glow */
+    cursor: pointer; /* pointer on hover */
+    transition: 0.3s; /* smooth changes */
+}
+
+.card button:hover{
+    box-shadow: 0 0 15px lightgray; /* bigger glow */
+    opacity: 0.7; /* slightly transparent */
+}
+
+.card:hover{
+    box-shadow: 0 0 15px rgb(211, 211, 211); /* glow on card hover */
+}
+
+.card:nth-child(1){
+    grid-column: span 2; /* first card spans 2 columns */
+}
+
+.card:nth-child(2){
+    grid-row: span 2; /* second card spans 2 rows */
+    height: 83vh; /* taller card */
+}
+
+.footer{
+    width: 100%; /* full width */
+    display: flex; /* flex layout */
+    align-items: center; /* center vertically */
+    justify-content: space-between; /* space between items */
+    background-color: rgba(211, 211,211, 0.21); /* transparent light bg */
+    backdrop-filter: blur(10px); /* blur behind */
+    height: 100px; /* footer height */
+}
+
+.footer p{
+    margin: 0 20px; /* side space */
+}
+
+.footer ul{
+    display: flex; /* horizontal list */
+    list-style: none; /* no bullets */
+}
+
+.footer a{
+    text-decoration: none; /* no underline */
+    color: white; /* white text */
+    padding: 7px 7px; /* inside space */
+    border-radius: 50px; /* round pills */
+    border: 1px solid lightgray; /* light border */
+    transition: 0.3s; /* smooth */
+    margin: 0 10px; /* side space */
+}

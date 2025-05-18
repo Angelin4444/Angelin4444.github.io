@@ -1,0 +1,167 @@
+body {
+  margin: 0; /* no space around body */
+  background-color: black; /* black background */
+  color: white; /* white text */
+  font-family: Arial, sans-serif; /* set font */
+}
+
+header {
+    display: flex; /* flex layout */
+    justify-content: space-between; /* space between left and right */
+    align-items: center; /* center vertically */
+    padding: 1rem 2rem; /* space inside */
+    background-color: #111; /* dark header */
+}
+
+.head-left {
+    display: flex; /* flex layout */
+    align-items: center; /* center items */
+    gap: 1rem; /* space between logo and button */
+}
+
+.head-left img {
+    width: 50px; /* logo size */
+}
+
+.head-left button {
+    background-color: #fff; /* white button */
+    color: #000; /* black text */
+    border: none; /* no border */
+    padding: 0.5rem 1rem; /* button padding */
+    cursor: pointer; /* pointer on hover */
+}
+
+.head-right p {
+    display: inline; /* inline text */
+    margin-left: 1.5rem; /* space between links */
+}
+
+.head-right a {
+    color: white; /* link color */
+    text-decoration: none; /* no underline */
+}
+
+.about-section {
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+    margin-top: 200px; /* space from top */
+    display: flex; /* flex layout */
+    flex-direction: column; /* stack items */
+    align-items: center; /* center items */
+    color: white; /* text color */
+}
+
+.image-box {
+    width: 360px; /* box width */
+    height: 510px; /* box height */
+    overflow: hidden; /* hide overflow */
+    display: flex; /* center image */
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px; /* rounded corners */
+}
+
+.about-flex {
+    display: flex; /* flex layout */
+    justify-content: center; /* center items */
+    align-items: center; /* center items */
+    gap: 50px; /* space between items */
+    margin: 50px auto; /* space outside */
+    flex-wrap: wrap; /* wrap on small screens */
+    max-width: 1200px; /* max size */
+    padding: 0 20px; /* side padding */
+}
+
+.about-text {
+    flex: 1; /* flexible size */
+    min-width: 300px; /* min size */
+    max-width: 600px; /* max size */
+}
+
+.about-video {
+    flex: 1; /* flexible size */
+    min-width: 300px; /* min size */
+    max-width: 600px; /* max size */
+    clip-path: polygon(0 0, 100% 14%, 100% 100%, 18% 98%); /* cut shape */
+}
+
+.about-video video {
+    width: 100%; /* full width */
+    height: auto; /* auto height */
+    border-radius: 30px; /* rounded corners */
+    object-fit: cover; /* cover area */
+}
+
+.about-text {
+    flex: 1; /* flexible size */
+    min-width: 300px;
+    max-width: 600px;
+    color: white; /* text color */
+    font-size: 16px; /* text size */
+}
+
+.about-text ul {
+    padding-left: 20px; /* space before list */
+    list-style-type: disc; /* bullet list */
+    line-height: 1.8; /* space between lines */
+}
+
+.stones-img {
+    position: absolute; /* fixed place */
+    margin-top: 22%; /* space from top */
+    width: 500px; /* image size */
+}
+
+.image-box img {
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+    object-fit: cover; /* cover box */
+}
+
+.about-section p {
+    font-size: 12px; /* small text */
+}
+
+.about-section h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* bold font */
+    font-weight: 900; /* strong bold */
+    font-size: 100px; /* big text */
+    max-width: 1150px; /* max width */
+    text-align: center; /* center text */
+    margin: 25px; /* space around */
+    text-transform: uppercase; /* all caps */
+    background: linear-gradient(to right, #4acfee, #53f8c9, #02d79a, #6070fd, #2a46ff, #0099ff, #4acfee); /* colorful text */
+    background-size: 200%; /* double size */
+    background-clip: text; /* apply to text */
+    -webkit-background-clip: text; /* Safari support */
+    -webkit-text-fill-color: transparent; /* make text transparent */
+    animation: animate-gradient 2.5s linear infinite; /* moving color */
+}
+
+.highlight-heading {
+    background: linear-gradient(to right, #4acfee, #53f8c9, #02d79a, #6070fd, #2a46ff, #0099ff, #4acfee); /* same gradient */
+    background-size: 200%; /* double size */
+    background-clip: text; /* gradient on text */
+    -webkit-background-clip: text; /* Safari support */
+    -webkit-text-fill-color: transparent; /* make text see-through */
+    animation: animate-gradient 2.5s linear infinite; /* moving effect */
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position: 200%; /* move color to right */
+    }
+}
+
+.about-section h5 {
+    margin-top: 50px; /* space on top */
+    margin-bottom: 0; /* no bottom space */
+}
+
+.about-section h5 {
+    margin-top: 5px; /* small top space */
+    color: gray; /* gray color */
+    max-width: 425px; /* max width */
+    text-align: center; /* center text */
+    line-height: 25px; /* line space */
+}

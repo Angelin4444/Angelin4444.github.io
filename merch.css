@@ -1,0 +1,104 @@
+* {
+  margin: 0; /* remove space outside */
+  padding: 0; /* remove space inside */
+  box-sizing: border-box; /* include padding and border in size */
+}
+
+body {
+  background-color: #000; /* black background */
+  color: #fff; /* white text */
+  font-family: Arial, sans-serif; /* font style */
+  overflow-x: hidden; /* hide scroll on x-axis */
+}
+
+.video-section {
+  text-align: center; /* center text */
+  padding: 40px 0; /* space top and bottom */
+}
+
+.center-video {
+  width: 80%; /* 80% of screen */
+  max-width: 700px; /* limit width */
+  border: 3px solid #fff; /* white border */
+  border-radius: 10px; /* round corners */
+}
+
+.order-text {
+  margin-top: 20px; /* space on top */
+  font-size: 1.5rem; /* big text */
+}
+
+.infinite-banner {
+  background-color: #111; /* dark gray */
+  overflow: hidden; /* hide overflow */
+  white-space: nowrap; /* one line only */
+  border-top: 2px solid #fff; /* white top border */
+  border-bottom: 2px solid #fff; /* white bottom border */
+}
+
+.scroll-text {
+  display: inline-block; /* block in line */
+  padding: 20px 0; /* space top and bottom */
+  font-size: 1.2rem; /* font size */
+  animation: scroll 10s linear infinite; /* move text left to right */
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); } /* start from right */
+  100% { transform: translateX(-100%); } /* move to left */
+}
+
+.collections {
+  padding: 40px 20px; /* space all around */
+  text-align: center; /* center text */
+}
+
+.card-container {
+  display: flex; /* flex layout */
+  flex-wrap: wrap; /* go to next line */
+  justify-content: center; /* center items */
+  gap: 20px; /* space between cards */
+  margin-top: 20px; /* space on top */
+}
+
+.item-card {
+  background-color: #222; /* dark background */
+  padding: 25px; /* space inside */
+  width: 240px; /* card width */
+  border-radius: 10px; /* round edges */
+  border: 1px solid #555; /* gray border */
+  text-align: center; /* center content */
+}
+
+.item-card img {
+  width: 100%; /* full width */
+  height: 220px; /* image height */
+  object-fit: cover; /* keep image ratio */
+  border-radius: 8px; /* round image */
+}
+
+.item-card p {
+  margin: 10px 0; /* space top and bottom */
+  font-weight: bold; /* bold text */
+}
+
+.item-card button {
+  background-color: #ff4d4d; /* red button */
+  color: white; /* white text */
+  border: none; /* no border */
+  padding: 8px 12px; /* space inside */
+  border-radius: 5px; /* round button */
+  cursor: pointer; /* pointer on hover */
+}
+
+.item-card button:hover {
+  background-color: #ff1a1a; /* darker red on hover */
+}
+
+footer {
+  background-color: #111; /* dark background */
+  text-align: center; /* center text */
+  padding: 20px; /* space inside */
+  margin-top: 40px; /* space on top */
+  font-size: 0.9rem; /* small text */
+}
